@@ -18,7 +18,7 @@ pipeline {
                     echo 'Checking out code from Bitbucket repository'
                 }
                 // Clone the github repository and specify the develop branch
-                git credentialsId: 'github-credentials', url: BITBUCKET_REPO_URL, branch: 'main'
+                git credentialsId: 'github-credentials', url: GITHUB_REPO_URL, branch: 'main'
             }
         }
 
